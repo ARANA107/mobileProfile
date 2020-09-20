@@ -12,7 +12,7 @@
       "price":"$100",
       "color":"Dark Grey",
       "screen Size": "10 inch",
-       "imagePath": "assets/images/iphoneXR.png"
+      "imagePath": "assets/images/iphoneXR.png"
     },
     { "id":"3",
       "name":"s10",

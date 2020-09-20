@@ -5,20 +5,12 @@ import Pagination from './components/Pagination';
 import data from '../data/data.json';
 
  const Accessories = () =>{
-    const [posts, setPosts] = useState([]);
+    const [posts, setPosts] = useState([{}]);
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [postPerPage, setPostsPerPage] = useState(5);
 
     useEffect(()=>{
-        // const fetchPosts = async () =>{
-        //     setLoading(true);
-
-        //     const res = await axios.get('https://jsonplaceholder.typicode.com/posts');
-        //     setPosts(res.data);
-        //     setLoading(false);
-        // }
-        // fetchPosts();
         setPosts(data);
     },[])
 
