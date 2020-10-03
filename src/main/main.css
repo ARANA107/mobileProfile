@@ -1,13 +1,33 @@
-.deckSpace{
-   margin-top:15px;
-   margin-bottom: 15px;
+.deckSpace {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.row .takeFull{
-   margin:30px auto;
+.row .takeFull {
+  margin: 30px auto;
 }
 
-.para{
-   background-color: rgb(169,169,169,0.2);
-   font-size: 19px;
+.para {
+  background-color: rgb(169, 169, 169, 0.2);
+  font-size: 19px;
+}
+
+.mainNameLogo {
+  border-radius: 80px;
+  background-color: beige;
+  height: 142px;
+  width: 299px;
+  position: absolute;
+  left: 5%;
+}
+
+.mainNameLogo img {
+  left: 0px;
+  position: absolute;
+}
+
+.mainNameLogo span {
+  top: 40%;
+  left: 25%;
+  position: relative;
 }

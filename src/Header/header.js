@@ -52,9 +52,6 @@ export class Header extends Component {
                 <NavLink href="/">Home</NavLink>
               </NavItem>
               <NavItem style={this.style1}>
-                <NavLink href="/accessories">Accessories</NavLink>
-              </NavItem>
-              <NavItem style={this.style1}>
                 <NavLink href="/about">About</NavLink>
               </NavItem>
               <NavItem style={this.style1}>

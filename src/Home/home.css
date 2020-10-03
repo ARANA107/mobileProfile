@@ -1,0 +1,25 @@
+.home {
+  position: absolute;
+  top: 8%;
+  height: 85vh;
+  width: 100%;
+  background-image: url("/assets/images/home.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.sideToggleHam {
+  position: relative;
+  float: right;
+}
+
+.sideNav {
+  position: relative;
+  z-index: 9999;
+}
+
+.red {
+  background-color: red;
+  width: 300px;
+  height: 40px;
+}

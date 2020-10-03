@@ -1,38 +1,57 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import { PhoneMarket } from '../phoneMarket/phoneMarket';
-import { Header } from '../Header/header';
-import Accessories from '../Accessories/accessories';
 import { Main } from '../main/main';
-import { Footer } from '../Footer/footer';
-import About from '../Accessories/components/About';
-import Contact from '../Accessories/components/Contact';
+import Projects from '../components/projects/Projects';
+import { Resume } from '../components/resume/resume';
+import Contact from '..//components/Contact';
+import Hamburger from './../utils/hamburger';
 
-export class Home extends Component {
 
-    style = {
-        minHeight: "100%",
-        position: "relative"
+import './home.css';
+import SidePanel from '../components/SidePanel/SidePanel';
+
+export const Home = () => {
+
+    const style = {
+        width: "30%",
+        height: "80vh"
     }
-    render() {
-        return (
-            <>
-                <Header />
-                <div style={{ minHeight: "500px" }}>
-                    <Switch>
-                        <Route exact path='/' component={Main} />
-                        <Route exact path='/accessories' component={Accessories} />
-                        <Route exact path='/phone' component={PhoneMarket} />
-                        <Route exact path="/about" component={About} />
-                        <Route exact path="/contact" component={Contact} />
-                        <Redirect to='/' />
-                    </Switch>
-                </div>
-                <div style={this.style}>
-                    <Footer />
-                </div>
-            </>
+    const [toggle, setToggle] = useState(0);
 
-        )
+    // const props = useSpring({
+    //     opacity: toggle ? 1 : 0,
+    //     position: "relative",
+    //     zIndex: "9999"
+    // });
+
+    const changeToggle = () => {
+        setToggle(toggle => !toggle);
     }
+
+    const setT = (val) => {
+        setToggle(val);
+        console.log('--------------', val);
+    }
+
+    return (
+        <div className="home">
+
+            <SidePanel toggle={toggle} changeToggle={changeToggle.bind(this)} />
+            <div>
+                <Switch>
+                    <Route exact path='/home' component={Main} />
+                    <Route path="/resume" render={props => <Resume setT={setT.bind(this)} />} />
+                    <Route exact path="/projects" component={Projects} />
+                    <Route exact path="/contact" component={Contact} />
+                    <Redirect to='/home' />
+                </Switch>
+            </div>
+
+
+        </div>
+
+    )
+
 }
+
+
