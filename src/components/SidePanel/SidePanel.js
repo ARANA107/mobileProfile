@@ -46,12 +46,10 @@ const SidePanel = (props) => {
 
                 </div>
             </div>
-            <div id="arrow" className={props.toggle ? "showw" : "hidee"} onClick={(e) => props.changeToggle()}>
+            {/* <div id="arrow" className={props.toggle ? "showw" : "hidee"} onClick={(e) => props.changeToggle()}>
 
-            </div>
-            <section id="section04" class="demo">
-                <a href="#section05"><span></span></a>
-            </section>
+            </div> */}
+
         </div>
     )
 }

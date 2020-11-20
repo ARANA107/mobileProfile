@@ -4,7 +4,6 @@ import { Main } from '../main/main';
 import Projects from '../components/projects/Projects';
 import { Resume } from '../components/resume/resume';
 import Contact from '..//components/Contact';
-import Hamburger from './../utils/hamburger';
 
 
 import './home.css';
@@ -16,13 +15,9 @@ export const Home = () => {
         width: "30%",
         height: "80vh"
     }
+
     const [toggle, setToggle] = useState(0);
 
-    // const props = useSpring({
-    //     opacity: toggle ? 1 : 0,
-    //     position: "relative",
-    //     zIndex: "9999"
-    // });
 
     const changeToggle = () => {
         setToggle(toggle => !toggle);
@@ -33,10 +28,12 @@ export const Home = () => {
         console.log('--------------', val);
     }
 
+
     return (
         <div className="home">
 
             <SidePanel toggle={toggle} changeToggle={changeToggle.bind(this)} />
+            <div style={{ backgroundColor: "green" }}><img onClick={changeToggle.bind(this)} className="hamStyle" src="/assets/images/hamBurger.png" /></div>
             <div>
                 <Switch>
                     <Route exact path='/home' component={Main} />
