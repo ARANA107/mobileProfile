@@ -1,12 +1,13 @@
-import React from 'react'
-import About from './About'
+import React, { useEffect } from 'react'
 
-function Contact() {
+export const Contact = (props) => {
+
+    useEffect(() => {
+        props.setT(0);
+    }, []);
+
     return (
         <div>
-            <p>this is contact page!</p>
         </div>
     )
 }
-
-export default Contact

@@ -84,5 +84,6 @@
 @media screen and (min-width: 1200px) {
   #menu.hide {
     transform: translate3d(0vw, 0, 0);
+    width: 20%;
   }
 }

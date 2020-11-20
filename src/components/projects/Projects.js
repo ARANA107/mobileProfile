@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
-function Projects() {
+export const Projects = (props) => {
+
+    useEffect(() => {
+        props.setT(0);
+    }, []);
+
     return (
         <div>
-            these are projects!
         </div>
     )
 }
-
-export default Projects

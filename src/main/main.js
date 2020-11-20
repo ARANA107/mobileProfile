@@ -1,26 +1,38 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react'
+import "@lottiefiles/lottie-player";
 
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import "./main.css";
+import './main.css';
 
+export const Main = (props) => {
 
-export class Main extends Component {
+  useEffect(() => {
+    props.setT(0);
+  }, []);
 
-
-
-  render() {
-
-    return (
-      <>
-        <div className="container">
-          <div className="row">
-            <div className="col text-center m-4">
-            </div>
-          </div>
-
-        </div>
-      </>
-    )
+  const animationStyle = {
+    width: "300px",
+    height: "300px"
   }
 
+  return (
+    <>
+      <div className="mainAnimation">
+        <lottie-player
+          src="https://assets10.lottiefiles.com/private_files/lf30_WdTEui.json"
+          background="transparent"
+          speed="0.8"
+          style={animationStyle}
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+
+      <div className="nameIntro">
+        <p className="hey">Hey <img width="41px" src="assets/images/smiling.png" /></p>
+        <p className="iName">I am Aishwarya Rana.</p>
+        <p className="iWork">Full Stack developer!</p>
+      </div>
+
+    </>
+  )
 }

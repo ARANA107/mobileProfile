@@ -31,3 +31,9 @@
   margin: 12px 12px 0 0;
   cursor: pointer;
 }
+
+@media screen and (min-width: 1200px) {
+  .hamStyle {
+    display: none;
+  }
+}

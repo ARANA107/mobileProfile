@@ -1,15 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './sidePanel.css';
 
 
 const SidePanel = (props) => {
-
-    const [toggle, setToggle] = useState(0);
-
-    useEffect(() => {
-        console.log(props);
-    }, [])
 
     return (
         <div>
@@ -17,7 +11,7 @@ const SidePanel = (props) => {
                 <div className="sectionOne">
                     <div className="logoWithName">
                         <div className="logo">
-                            <img src="/assets/images/pop.jpg" />
+                            <img alt={"photo"} src="/assets/images/pop.jpg" />
                         </div>
                         <div className="name">
                             Ash
