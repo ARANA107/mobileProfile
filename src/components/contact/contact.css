@@ -20,3 +20,37 @@
 .connectLogos a {
   margin: 5px;
 }
+
+.contactAnimation {
+  width: 310px;
+  margin: 22px auto 0 auto;
+  height: 230px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .whole {
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+  }
+  .contactAnimation {
+    position: relative;
+    left: 9%;
+    margin-left: 40%;
+  }
+
+  .connectWM {
+    width: 80%;
+  }
+  .connectLogos {
+    text-align: center;
+    width: 400px;
+    margin-left: 13%;
+  }
+  .cLog {
+    text-align: center;
+    width: 700px;
+    left: 35%;
+    position: relative;
+  }
+}

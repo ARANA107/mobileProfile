@@ -29,10 +29,10 @@ export const Main = (props) => {
 
       <div className="nameIntro">
         <p className="hey">Hey <img width="41px" src="assets/images/smiling.png" /></p>
-        <p className="iName">I am Aishwarya Rana.</p>
+        <p className="iName">I am Aishwarya Rana</p>
       </div>
-      <div class="sign">
-        <span class="fast-flicker">D</span>eve<span class="flicker">lo</span>per
+      <div className="sign">
+        <span className="fast-flicker">D</span>eve<span class="flicker">lo</span>per
     </div>
 
     </>

@@ -16,6 +16,7 @@ p.goal {
   font-size: 20px;
   padding: 21px;
   color: white;
+  max-width: 710px;
   font-family: "Baloo Tammudu 2", cursive;
   margin: 0 auto !important;
 }
@@ -77,4 +78,16 @@ p.goal {
 .resBtn a:focus {
   text-decoration: none;
   color: white;
+}
+
+@media only screen and (min-width: 1200px) {
+  .resumeAnimation {
+    position: relative;
+    left: 10%;
+  }
+  .mainCont {
+    width: 60%;
+    margin-left: 29%;
+    padding-left: 42px;
+  }
 }

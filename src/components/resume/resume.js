@@ -24,11 +24,13 @@ export const Resume = (props) => {
                     autoplay
                 ></lottie-player>
             </div>
-            <div className="resumeHeading">Resume</div>
-            <p className="goal"> My goal is to become full stack developer. Not just develop front and back but someone who can also design
+            <div className="mainCont">
+                <div className="resumeHeading">Resume</div>
+                <p className="goal"> My goal is to become full stack developer. Not just develop front and back but someone who can also design
             database, do testing on finished application and also deploy it in the end. I am on the journey to master all.  </p>
-            <div className="resBtn"><button className="button"><a href='/assets/AshResume.docx' download>Download</a>
-            </button></div>
+                <div className="resBtn"><button className="button"><a href='/assets/AshResume.docx' download>Download</a>
+                </button></div>
+            </div>
         </>
     )
 }

@@ -42,3 +42,20 @@
   margin-bottom: 12px;
   color: white;
 }
+
+@media only screen and (min-width: 1200px) {
+  .proMain {
+    margin-left: 25%;
+  }
+  .projectAnimation {
+    position: relative;
+    left: 12%;
+  }
+  #proId {
+    width: 629px;
+    margin: 0 auto;
+  }
+  .even {
+    float: none;
+  }
+}

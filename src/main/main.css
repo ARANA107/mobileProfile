@@ -259,3 +259,15 @@
     opacity: 1;
   }
 }
+
+@media only screen and (min-width: 1200px) {
+  .mainAnimation {
+    padding-left: 10%;
+  }
+  .nameIntro {
+    padding-left: 20%;
+  }
+  .sign {
+    left: 60%;
+  }
+}

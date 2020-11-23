@@ -32,15 +32,16 @@ export const Projects = (props) => {
                     autoplay
                 ></lottie-player>
             </div>
+            <div className="proMain">
+                <div className="projectHeading">Projects</div>
 
-            <div className="projectHeading">Projects</div>
+                <p className="desc">(Projects deployed on heroku will take time to load)</p>
 
-            <p className="desc">(Projects deployed on heroku will take time to load)</p>
-
-            <div id="proId" className="projectsScroll">
-                <a href="https://highchartsangular.herokuapp.com/" target="_blank" rel="noopener noreferrer"> <img width="200px" src={project} /></a>
-                <a href="https://protected-cove-26719.herokuapp.com/" target="_blank" rel="noopener noreferrer"> <img className="even" width="200px" src={project1} /></a>
-                <a href="https://pacific-meadow-32711.herokuapp.com/" target="_blank" rel="noopener noreferrer"> <img width="200px" src={project2} /></a>
+                <div id="proId" className="projectsScroll">
+                    <a href="https://highchartsangular.herokuapp.com/" target="_blank" rel="noopener noreferrer"> <img width="200px" src={project} /></a>
+                    <a href="https://protected-cove-26719.herokuapp.com/" target="_blank" rel="noopener noreferrer"> <img className="even" width="200px" src={project1} /></a>
+                    <a href="https://pacific-meadow-32711.herokuapp.com/" target="_blank" rel="noopener noreferrer"> <img width="200px" src={project2} /></a>
+                </div>
             </div>
         </div>
     )
