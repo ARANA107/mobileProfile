@@ -9,12 +9,13 @@ export const Contact = (props) => {
     }, []);
     const animationStyle = {
         width: "350px",
-        height: "200px",
+        height: "270px",
+        marginLeft: "12.5px"
     }
     return (
         <div>
             <lottie-player
-                src="https://assets1.lottiefiles.com/packages/lf20_MNbZyr/Vegas.json"
+                src="https://assets5.lottiefiles.com/packages/lf20_nnQHiM.json"
                 background="transparent"
                 speed="0.8"
                 style={animationStyle}
