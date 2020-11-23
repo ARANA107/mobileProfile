@@ -1,0 +1,44 @@
+.projectAnimation {
+  width: 200px;
+  margin: 22px auto 0 auto;
+}
+
+.projectsScroll {
+  height: 50vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 10px;
+}
+
+.projectsScroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.projectsScroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.even {
+  position: relative;
+  float: right;
+}
+
+.projectHeading {
+  margin: 5px;
+  font-size: 34px;
+  color: rgb(156 165 160);
+  font-family: Jost, sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.desc {
+  text-align: center;
+  font-size: 13px;
+  font-family: "Baloo Tammudu 2";
+  font-weight: lighter;
+  margin-bottom: 12px;
+  color: white;
+}

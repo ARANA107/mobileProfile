@@ -1,0 +1,22 @@
+.connectLogos {
+  width: 100%;
+  text-align: center;
+}
+
+.logoImg {
+  width: 75px;
+}
+
+.connectWM {
+  font-size: 36px;
+  color: rgb(156 165 160);
+  font-family: Jost, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  padding: 25px;
+  margin: 10px;
+}
+
+.connectLogos a {
+  margin: 5px;
+}

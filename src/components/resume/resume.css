@@ -12,15 +12,12 @@
   font-weight: bold;
 }
 
-p {
-  margin: 0 auto !important;
-}
-
 p.goal {
   font-size: 20px;
   padding: 21px;
   color: white;
   font-family: "Baloo Tammudu 2", cursive;
+  margin: 0 auto !important;
 }
 
 .button {

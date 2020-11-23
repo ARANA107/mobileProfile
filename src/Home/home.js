@@ -3,7 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { Main } from '../main/main';
 import { Projects } from '../components/projects/Projects';
 import { Resume } from '../components/resume/resume';
-import { Contact } from '..//components/Contact';
+import { Contact } from '..//components/contact/Contact';
 
 
 import './home.css';
