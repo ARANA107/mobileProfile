@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './sidePanel.css';
-
+import myPhoto from '../../images/pop.jpg';
 
 const SidePanel = (props) => {
 
@@ -11,7 +11,7 @@ const SidePanel = (props) => {
                 <div className="sectionOne">
                     <div className="logoWithName">
                         <div className="logo">
-                            <img alt={"photo"} src="public/assets/images/pop.jpg" />
+                            <img alt={"photo"} src={myPhoto} />
                         </div>
                         <div className="name">
                             Ash
