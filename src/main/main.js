@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import "@lottiefiles/lottie-player";
 
+import smiling from '../images/smiling.png';
+
 import './main.css';
 
 export const Main = (props) => {
@@ -28,7 +30,7 @@ export const Main = (props) => {
       </div>
 
       <div className="nameIntro">
-        <p className="hey">Hey <img width="41px" src="assets/images/smiling.png" /></p>
+        <p className="hey">Hey <img width="41px" src={smiling} /></p>
         <p className="iName">I am Aishwarya Rana</p>
       </div>
       <div className="sign">

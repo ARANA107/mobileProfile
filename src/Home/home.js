@@ -5,6 +5,8 @@ import { Projects } from '../components/projects/Projects';
 import { Resume } from '../components/resume/resume';
 import { Contact } from '..//components/contact/Contact';
 
+import hamburger from '../images/hamBurger.png';
+import Background from '../images/home.png';
 
 import './home.css';
 import SidePanel from '../components/SidePanel/SidePanel';
@@ -24,12 +26,17 @@ export const Home = () => {
         setToggle(val);
     }
 
+    const background = {
+        backgroundImage: `url(${Background})`
+
+    }
+
 
     return (
-        <div className="home">
+        <div style={background} className="home">
 
             <SidePanel toggle={toggle} changeToggle={changeToggle.bind(this)} />
-            <div style={{ backgroundColor: "green" }}><img alt={"menu item"} onClick={changeToggle.bind(this)} className="hamStyle" src="/assets/images/hamBurger.png" /></div>
+            <div style={{ backgroundColor: "green" }}><img alt={"menu item"} onClick={changeToggle.bind(this)} className="hamStyle" src={hamburger} /></div>
             <div>
                 <Switch>
                     <Route path="/home" render={props => <Main setT={setT.bind(this)} />} />
