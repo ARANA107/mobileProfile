@@ -11,7 +11,7 @@ const SidePanel = (props) => {
                 <div className="sectionOne">
                     <div className="logoWithName">
                         <div className="logo">
-                            <img alt={"photo"} src="/assets/images/pop.jpg" />
+                            <img alt={"photo"} src="public/assets/images/pop.jpg" />
                         </div>
                         <div className="name">
                             Ash
