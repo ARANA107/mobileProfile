@@ -34,7 +34,7 @@ export const Main = (props) => {
         <p className="iName">I am Aishwarya Rana</p>
       </div>
       <div className="sign">
-        <span className="fast-flicker">D</span>eve<span class="flicker">lo</span>per
+        <span className="fast-flicker">D</span>eve<span className="flicker">lo</span>per
     </div>
 
     </>

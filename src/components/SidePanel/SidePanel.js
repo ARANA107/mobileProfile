@@ -40,10 +40,6 @@ const SidePanel = (props) => {
 
                 </div>
             </div>
-            {/* <div id="arrow" className={props.toggle ? "showw" : "hidee"} onClick={(e) => props.changeToggle()}>
-
-            </div> */}
-
         </div>
     )
 }

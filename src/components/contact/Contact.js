@@ -13,9 +13,8 @@ export const Contact = (props) => {
         props.setT(0);
     }, []);
     const animationStyle = {
-        width: "350px",
+        width: "340px",
         height: "270px",
-        marginLeft: "12.5px"
     }
     return (
         <div>

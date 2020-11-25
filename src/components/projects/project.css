@@ -59,3 +59,10 @@
     float: none;
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  #proId {
+    max-width: 419px;
+    margin: 0 auto;
+  }
+}
