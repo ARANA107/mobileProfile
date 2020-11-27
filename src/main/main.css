@@ -61,11 +61,6 @@
   font-weight: lighter;
 }
 
-@font-face {
-  font-family: Clip;
-  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
-}
-
 .sign {
   position: absolute;
   display: flex;
