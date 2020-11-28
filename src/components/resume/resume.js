@@ -26,8 +26,9 @@ export const Resume = (props) => {
             </div>
             <div className="mainCont">
                 <div className="resumeHeading">Resume</div>
-                <p className="goal"> My goal is to become full stack developer. Not just develop front and back but someone who can also design
-            database, do testing on finished application and also deploy it in the end. I am on the journey to master all.  </p>
+                <p className="goal"> I am a front-end developer and have hands on experience in React and Angular. My goal is to not just
+                develop front end and back end but someone who can also design database, do testing on finished application and also deploy it
+                in the end. I am on the journey to master "IT" all.  </p>
                 <div className="resBtn"><button className="button"><a href='/assets/AshResume.docx' download>Download</a>
                 </button></div>
             </div>
